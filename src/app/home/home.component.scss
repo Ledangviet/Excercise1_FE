@@ -1,0 +1,58 @@
+
+.container{   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    min-width: 1000px;
+    background-color: white;
+}
+.header {
+    background-color: white;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+@mixin default-border {
+    border: 1px solid black;
+}
+.student-table {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    thead{
+        font-weight: bold;
+        font-family: Arial;
+    }
+    tr{
+        td{  
+            @include default-border();                    
+        }
+    }
+}
+.detail-popup{
+    margin:auto;
+    background-color: white;
+    width: 100%;
+    position: relative;   
+    .detail-header{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }  
+    .detail-body{
+        display: flex;
+        flex-direction: row;
+        .detail-body-info{
+            padding-left: 20px;
+        }
+    } 
+    .detail-body-title{
+        padding-left: 5px;
+    }
+}
