@@ -9,7 +9,7 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationModule } from '@progress/kendo-angular-navigation';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
-import { DetaildialogComponent } from './detaildialog/detaildialog.component';
+import { DetailComponent } from './detail/detail.component';
 
 
 
@@ -19,7 +19,7 @@ import { DetaildialogComponent } from './detaildialog/detaildialog.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    DetaildialogComponent
+    DetailComponent
   ],
   imports: [
     BrowserModule,

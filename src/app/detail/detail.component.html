@@ -1,0 +1,21 @@
+<div *ngIf="studentdetail" class="detail-popup">
+    <div class="detail-body"> 
+        <div class="detail-body-title">           
+            <p class="detail-info">ID:</p>
+            <p class="detail-info">Name:</p>
+            <p class="detail-info">Birth:</p>
+            <p class="detail-info">Adress:</p>
+            <p class="detail-info">Gender:</p>  
+            <p class="detail-info">Description:</p>  
+            <p class="detail-info">Mofe Info:</p>            
+        </div>
+        <div class="detail-body-info">
+            <p class="detail-info">{{studentdetail.id}}</p>
+            <p class="detail-info">{{studentdetail.name}}</p>
+            <p class="detail-info">{{studentdetail.birthDay}}</p>
+            <p class="detail-info">{{studentdetail.adress}}</p>  
+            <p class="detail-info">{{studentdetail.gender}}</p>
+            <p class="detail-info">{{studentdetail.description}}</p>
+        </div>                               
+    </div>        
+</div>  

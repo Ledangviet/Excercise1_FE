@@ -9,9 +9,11 @@ import { catchError, retry } from 'rxjs/operators';
 export class ConfigService {
   private url = 'https://localhost:7110/api/Student';
 
+
   constructor(private http: HttpClient) { }
 
   getStudents(){
+    
     return this.http.get(this.url);
   }
   getStudenDetail(id:string){
