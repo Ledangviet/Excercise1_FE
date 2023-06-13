@@ -2,13 +2,20 @@
 <div class="container">
     <div class="header"> Student Information</div> 
     <kendo-grid 
-        [data]="students"
+        [data]="gridData"
+        [sortable]="true"
+        [kendoGridBinding]="gridData"
+        [filterable]="true"
         [selectable]="true"
         (selectionChange)="showdetailDialog($event)"
+        
     >       
-        <kendo-grid-column field="id" title="ID"> </kendo-grid-column>
-        <kendo-grid-column field="name" title="Name"> </kendo-grid-column>
-        <kendo-grid-column field="birthday" title="Birthday"></kendo-grid-column>
+        <kendo-grid-column [filterable]="false" field="id" title="ID"> </kendo-grid-column>
+        <kendo-grid-column [filterable]="false" field="name" title="Name"> </kendo-grid-column>
+        <kendo-grid-column
+            field="birthDay" title="Birthday" format="MM/dd/yyyy"
+            filter="date"
+        ></kendo-grid-column>
         <kendo-grid-column field="adress" title="Adress"> </kendo-grid-column>
         <kendo-grid-column field="gender" title="Gender"> </kendo-grid-column>
         <kendo-grid-column field="description" title="Description"> </kendo-grid-column>

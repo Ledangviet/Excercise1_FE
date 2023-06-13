@@ -1,8 +1,8 @@
-export class Student {
-    public StudentID?: number;
-    public FullName = "";
-    public BirthDay = "";
-    public Adress = "";
-    public Gender = "";
-    public Description = "";
+export class StudentModel {
+    public id: number;
+    public name: string;
+    public birthDay :Date;
+    public adress: string;
+    public gender: string;
+    public description: string;
  }

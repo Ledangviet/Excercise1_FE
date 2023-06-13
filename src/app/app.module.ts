@@ -10,16 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationModule } from '@progress/kendo-angular-navigation';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
 import { DetailComponent } from './detail/detail.component';
-
-
-
-
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DetailComponent
+    DetailComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -7,5 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public id = 1;
   title = 'StudentInfo';
 }
